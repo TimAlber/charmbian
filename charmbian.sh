@@ -64,7 +64,7 @@ rootpart="$devname""$needp""2"
 
 echo "Copying kernel..."
 #cheating and assuming we are on /dev/sda
-dd if=/dev/sda1 of=$kernelpart
+dd if=/dev/mmcblk0 of=$kernelpart
 
 echo "Downloading debootstrap..."
 wget http://ftp.us.debian.org/debian/pool/main/d/debootstrap/debootstrap_1.0.67_all.deb
